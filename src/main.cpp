@@ -1,16 +1,23 @@
 #include <Arduino.h>
-int value=0;
+
+// Variable to store analog sensor value
+int value = 0;
+
 void setup() {
-// write your initialization code here
+    // Start serial communication at 9600 baud rate
     Serial.begin(9600);
-    pinMode(A0,INPUT);
 
-
+    // Configure analog pin A0 as input
+    pinMode(A0, INPUT);
 }
 
 void loop() {
-// write your code here
-    value=analogRead(A0);
+    // Read analog value from sensor connected to A0
+    value = analogRead(A0);
+
+    // Print sensor value to Serial Monitor
     Serial.println(value);
+
+    // Wait 500 milliseconds before next reading
     delay(500);
 }
