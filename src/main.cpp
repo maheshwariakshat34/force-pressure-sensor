@@ -11,6 +11,7 @@
  *
  * @version 1.0
  * @date 2026-02-17
+ * @auhor Akshat Lakhotiya
  */
 
 #include <Arduino.h>
